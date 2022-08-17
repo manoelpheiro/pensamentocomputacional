@@ -1,5 +1,69 @@
- :root {
-  --font-primary: 'Montserrat', sans-serif;
-  --font-secondary: 'Montserrat', sans-serif;
-  --font-text: 'Montserrat', sans-serif;
+@import url(./reset.css);
+@import url(./colors.css);
+@import url(./fonts.css);
+
+body
+{
+  color: var(--color-white);
+  font-family: var(--font-primary);
+}
+
+h1
+{
+  font-weight: 500;
+  font-size: 72px;
+  text-transform: uppercase;
+  margin-bottom: -25px;
+}
+
+#covercontainer
+{
+  height: 100vh;
+  background: rgb(67,125,184);
+  background: linear-gradient(180deg, rgba(67,125,184,1) 0%, rgba(29,56,83,1) 100%);
+}
+
+#hero
+{
+  text-align: center;
+
+  height: 100vh;
+  background-image: url(../img/cover/world.svg);
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: center;
+}
+
+#heroslogan
+{
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.space
+{
+  margin: 30px 0;
+}
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) 
+{
+
+  #hero
+  {
+    background-size: contain;
+    background-position: center;
+    padding: 0 15px;
+  }
+
+  h1
+  {
+    font-weight: 500;
+    font-size: 52px;
+    text-transform: uppercase;
+    margin-bottom: -25px;
+    margin-top: 25px;
+  }
 }
