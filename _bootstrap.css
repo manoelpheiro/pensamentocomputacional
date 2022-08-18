@@ -28,7 +28,7 @@ h1
   text-align: center;
 
   height: 100vh;
-  background-image: url(../img/cover/world.svg);
+  background-image: url(./world.svg);
   background-repeat: no-repeat;
   background-size: 40%;
   background-position: center;
